@@ -44,6 +44,38 @@ Privacy pattern that has served well: keep the *mechanical* sources
 the manifest points to. Nothing about people belongs in a versioned file if
 the repo might ever be public.
 
+## handover
+
+A date-stamped, topic-scoped handover document so a fresh session can pick
+up a thread cheaply — the between-session half of the same economy `sitrep`
+serves within a session.
+
+Two modes, detected from the request:
+
+- **write** — capture one thread's task state: decisions (with the why),
+  open threads and who holds each ball, gotchas, and *pointers* to files in
+  reading order rather than copies of them (copies drift, pointers don't).
+  Each handover carries a **pickup grade** — frontier / mixed / execution —
+  saying how much model the continuation actually needs, so the next session
+  can delegate the mechanical parts to a cheaper tier;
+- **pickup** — read the handover and its pointers in order, verify the open
+  threads against reality (sent mail, replies, new files) before acting,
+  then continue.
+
+Handovers live in a git-ignored `handovers/` directory with a newest-first
+`INDEX.md`, so "find that deep-dive from three months ago" is a ten-second
+job. Durable facts and preferences go to memory; a handover holds work in
+flight only.
+
+### Install
+
+Copy `skills/handover/SKILL.md` to:
+
+- macOS/Linux: `~/.claude/skills/handover/SKILL.md`
+- Windows: `%USERPROFILE%\.claude\skills\handover\SKILL.md`
+
+Then say "write a handover for <topic>" or "pick up the <topic> handover".
+
 ### Complements, not competitors
 
 For code-state reporting, see the existing ecosystem: git/PR/CI-grounded
@@ -56,5 +88,6 @@ This skill picks up where the repository's edge ends.
 
 Built in the field on [Project Terra](https://bantaydagat.org) — an
 open-source marine conservation effort in the Philippines — working with
-Claude. The skill exists because a one-word morning catch-up turned out to be
-the single highest-leverage habit in a partner-heavy project.
+Claude. `sitrep` exists because a one-word morning catch-up turned out to be the
+single highest-leverage habit in a partner-heavy project; `handover` exists
+because the second-highest was never dragging a long context into a new day.
