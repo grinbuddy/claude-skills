@@ -44,6 +44,14 @@ Privacy pattern that has served well: keep the *mechanical* sources
 the manifest points to. Nothing about people belongs in a versioned file if
 the repo might ever be public.
 
+### Complements, not competitors
+
+For code-state reporting, see the existing ecosystem: git/PR/CI-grounded
+sitreps, multi-agent SITREP coordinators, and live HTML status panels —
+e.g. [fullstackhouse/skills](https://github.com/fullstackhouse/skills),
+[levnikolaevich/claude-code-skills](https://github.com/levnikolaevich/claude-code-skills).
+This skill picks up where the repository's edge ends.
+
 ## handover
 
 A date-stamped, topic-scoped handover document so a fresh session can pick
@@ -75,14 +83,6 @@ Copy `skills/handover/SKILL.md` to:
 - Windows: `%USERPROFILE%\.claude\skills\handover\SKILL.md`
 
 Then say "write a handover for <topic>" or "pick up the <topic> handover".
-
-### Complements, not competitors
-
-For code-state reporting, see the existing ecosystem: git/PR/CI-grounded
-sitreps, multi-agent SITREP coordinators, and live HTML status panels —
-e.g. [fullstackhouse/skills](https://github.com/fullstackhouse/skills),
-[levnikolaevich/claude-code-skills](https://github.com/levnikolaevich/claude-code-skills).
-This skill picks up where the repository's edge ends.
 
 ---
 
