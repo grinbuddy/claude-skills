@@ -43,7 +43,9 @@ a new recurring source appears in the project's life, add it.
 ## 3. Conduct rules
 
 - **Verify, don't assume.** "You said you'd send X" → check whether X was
-  actually sent before listing it as done or undone.
+  actually sent before listing it as done or undone — and when a draft file
+  exists, read the sent body against it and report any difference. Editors
+  can preview a stale copy; the user may have pasted an old version.
 - **Deltas need a baseline** — keep or find the previous sitrep's state
   (conversation history, a log file, or the sources themselves) so "no
   change" is a checked claim, not a guess.
