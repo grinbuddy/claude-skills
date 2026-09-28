@@ -84,6 +84,37 @@ Copy `skills/handover/SKILL.md` to:
 
 Then say "write a handover for <topic>" or "pick up the <topic> handover".
 
+## tldr
+
+A plain-English recap for the moment you lose the thread. Long sessions drift
+into ticket numbers, branch names and acronyms; `tldr` makes the model stop
+and rewrite what it already knows for a smart reader who is not carrying
+those labels in their head.
+
+The answer always has the same four parts:
+
+- **Bottom line** — is anything broken, and do I need to do something now;
+- **What happened** — two to four bullets in everyday words, including what
+  did *not* change when that is the reassuring part;
+- **What I need from you** — numbered, one decision each, phrased so a
+  one-word reply works, with a recommendation and what happens if you do
+  nothing;
+- **What can wait** — one or two lines, not a list.
+
+The rules that matter: no label appears without a plain description in front
+of it, jargon is swapped for its effect, and simple words never soften bad
+news or drop a hard decision. It is a rewrite, not new work — nothing gets
+re-investigated to produce it.
+
+### Install
+
+Copy `skills/tldr/SKILL.md` to:
+
+- macOS/Linux: `~/.claude/skills/tldr/SKILL.md`
+- Windows: `%USERPROFILE%\.claude\skills\tldr\SKILL.md`
+
+Then say `tldr`, "I'm lost" or "in plain English" in any project.
+
 ---
 
 Built in the field on [Project Terra](https://bantaydagat.org) — an
